@@ -22,11 +22,11 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .logo b {
     color: white;
-    width: 88px;
     padding: 0px 25px;
     font-size: 25px;
     font-style: italic;
@@ -55,14 +55,16 @@ nav ul li a:hover {
 }
 
 .search {
+    width: 100vw;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .search input {
     outline: none;
     width: 30vw;
-    height: 27px;
+    height: 6vh;
     border-radius: 5px;
     margin: 0 16px 0 56px;
     padding: 0 12px;
@@ -71,16 +73,18 @@ nav ul li a:hover {
 .search button {
     font-family: "Lato", serif;
     cursor: pointer;
+    height: 6vh;
+    margin: 0px 1vw 0px 1vw;
     padding: 5px 5px;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 
 .slider {
-    width: 80vw;
-    margin: 6px 115px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
 }
 
 .slider img {
@@ -95,6 +99,7 @@ nav ul li a:hover {
 
 .cards {
     display: flex;
+    justify-content: center;
     overflow: hidden;
 }
 
@@ -126,3 +131,10 @@ footer {
     flex-direction: column;
     font-family: "Lato", serif;
 }
+
+
+/* @media screen and (min-width: 1366px) {
+    .card h2 {
+        margin: 0px 0px 0px 16vw;
+    }
+  } */
